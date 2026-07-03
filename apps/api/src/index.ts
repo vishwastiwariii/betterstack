@@ -5,10 +5,20 @@ const PORT = 3000
 
 app.use(express.json())
 
-app.get('/health', (req, res) => {
-    res.status(200).json({
-        message: "Ok"
-    })
+app.post('/website', async (req, res) => {
+
+})
+
+app.get("/status/:websiteId", async (req, res) => {
+
+})
+
+app.post("/user/signup", async(req, res) => {
+
+})
+
+app.post("/user/login", async (req, res) => {
+    
 })
 
 app.listen(3000, () => {
